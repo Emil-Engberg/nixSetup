@@ -113,8 +113,6 @@
   };
 
   environment.systemPackages = with pkgs; [
-    git
-    vim
     wget
     unzip
     zip
