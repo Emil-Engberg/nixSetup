@@ -75,7 +75,6 @@
       layout = "se";
       displayManager = {
         sddm.enable = true;
-        defaultSession = "hyprland";
       };
       desktopManager.cinnamon.enable =true;
     };

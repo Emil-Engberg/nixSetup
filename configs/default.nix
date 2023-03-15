@@ -6,6 +6,5 @@
         zsh/zsh.nix
         git/git.nix
         vim/vim.nix
-        hypr/hypr.nix
     ];
 }
