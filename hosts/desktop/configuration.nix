@@ -19,6 +19,11 @@
   };
 
   hardware = {
+    pulseaudio = {
+      enable = true;
+      support32Bit = true;
+      package = pkgs.pulseaudioFull;
+    };
     opengl = {
       driSupport = true;
       driSupport32Bit = true;
@@ -56,7 +61,6 @@
   };
 
   sound.enable = true;
-  hardware.pulseaudio.enable = false;
   
   security = {
     polkit.enable = true;
@@ -73,16 +77,6 @@
       };
       desktopManager.cinnamon.enable =true;
     };
-
-    pipewire = {
-      enable = true;
-      jack.enable = true;
-      pulse.enable = true;
-      alsa = {
-        enable = true;
-        support32Bit = true;
-      };
-    };
   };
 
   console.keyMap = "sv-latin1";
@@ -91,7 +85,7 @@
     isNormalUser = true;
     description = "Sebastian Lindholm Gustafsson";
     initialPassword = "pass";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "audio" "sound" ];
     shell = pkgs.zsh;
     packages = with pkgs; [
     ];
