@@ -33,6 +33,7 @@
         rocm-opencl-runtime
         amdvlk
         driversi686Linux.amdvlk
+        mesa.drivers
       ];
     };
   };
@@ -74,6 +75,7 @@
       layout = "se";
       displayManager = {
         sddm.enable = true;
+        defaultSession = "hyprland";
       };
       desktopManager.cinnamon.enable =true;
     };

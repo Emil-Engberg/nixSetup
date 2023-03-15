@@ -2,9 +2,10 @@
 
 {
     imports = [
-        ./sway.nix
-        ./zsh.nix
-        ./git.nix
-        ./vim.nix
+        sway/sway.nix
+        zsh/zsh.nix
+        git/git.nix
+        vim/vim.nix
+        hypr/hypr.nix
     ];
 }
