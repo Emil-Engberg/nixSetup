@@ -1,10 +1,8 @@
 { inputs, ... }:
 
 {
-    imports = [
-        sway/sway.nix
-        zsh/zsh.nix
-        git/git.nix
-        vim/vim.nix
-    ];
+  imports = [
+    steam/steam.nix
+    hypr/hypr.nix
+  ];
 }

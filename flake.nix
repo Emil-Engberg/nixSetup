@@ -10,18 +10,22 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    hyprland.url = "github:hyprwm/Hyprland";
+
+    nix-doom-emacs.url = "github:nix-community/nix-doom-emacs";
+
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }@inputs: 
+  outputs = { self, nixpkgs, home-manager, hyprland, nix-doom-emacs, ... }@inputs: 
   let
     user = "sebastian";
     location = "/$HOME/.setup";
   in
   {
     nixosConfigurations = (
-     import ./hosts {
+     import ./host {
         inherit (nixpkgs) lib;
-        inherit inputs nixpkgs user location home-manager;
+        inherit inputs nixpkgs user location home-manager hyprland nix-doom-emacs;
       }
     );
   };
