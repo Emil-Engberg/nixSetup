@@ -30,6 +30,7 @@
             unityhub
             discord
             yakuake
+            spotify
         ];
     };
 
