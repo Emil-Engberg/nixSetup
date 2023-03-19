@@ -19,12 +19,7 @@
   };
 
   hardware = {
-    pulseaudio = {
-      enable = true;
-      support32Bit = true;
-      package = pkgs.pulseaudioFull;
-      extraConfig = "default-sample-channels=6";
-    };
+
     opengl = {
       driSupport = true;
       driSupport32Bit = true;
@@ -73,6 +68,15 @@
   };
 
   services = {
+
+    pipewire = {
+      enable = true;
+      pulse.enable = true;
+      alsa = {
+        enable = true;
+        support32Bit = true;
+      };
+    };
 
     xserver = {
       videoDrivers = [ "amdgpu" ];
