@@ -81,7 +81,7 @@
       displayManager = {
         sddm.enable = true;
       };
-      desktopManager.cinnamon.enable =true;
+      desktopManager.plasma5.enable =true;
     };
 
     blueman = {
@@ -95,6 +95,7 @@
   fonts = {
     fonts = with pkgs; [
       jetbrains-mono
+      ubuntu_font_family
       (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
     ];
   };

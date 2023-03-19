@@ -202,11 +202,11 @@
         "utils": "utils"
       },
       "locked": {
-        "lastModified": 1678881218,
-        "narHash": "sha256-ZiKspOZ9MpwHRXJRxagjtT4WdN3xL0lno7J/c0cXeCk=",
+        "lastModified": 1678967335,
+        "narHash": "sha256-oFppZaAVRA0G/aVPvjtWaQI5EQ2dZ5LgbEKfsBmKQgA=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "85196310e1aceb1d91ff4fb5ac5cd6e1f630a66a",
+        "rev": "b832390db376fbbf44115904cfab6680fb42e076",
         "type": "github"
       },
       "original": {
@@ -223,16 +223,36 @@
         "xdph": "xdph"
       },
       "locked": {
-        "lastModified": 1678975420,
-        "narHash": "sha256-c2irdY51WjrYDSn0IPeCcZxNa03lVN5afPaca9orsQY=",
+        "lastModified": 1678984828,
+        "narHash": "sha256-fULVI69XchAnznXMtVet23li8Oi0RK8ZWBb50jA0rw4=",
         "owner": "hyprwm",
         "repo": "Hyprland",
-        "rev": "5d44ea802a604edfcc822c9f2376bb3881f3e805",
+        "rev": "606cb2832aff2c7305da1f880ce732f7eb464d04",
         "type": "github"
       },
       "original": {
         "owner": "hyprwm",
         "repo": "Hyprland",
+        "type": "github"
+      }
+    },
+    "hyprland-contrib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1679036674,
+        "narHash": "sha256-2s3Hfq56jL8ePyc3+calPT34FNMK2zksqwPhIxAq20o=",
+        "owner": "hyprwm",
+        "repo": "contrib",
+        "rev": "1af47a008e850c595aeddc83bb3f04fd81935caa",
+        "type": "github"
+      },
+      "original": {
+        "owner": "hyprwm",
+        "repo": "contrib",
         "type": "github"
       }
     },
@@ -348,11 +368,11 @@
     },
     "nixpkgs_3": {
       "locked": {
-        "lastModified": 1678654296,
-        "narHash": "sha256-aVfw3ThpY7vkUeF1rFy10NAkpKDS2imj3IakrzT0Occ=",
+        "lastModified": 1678898370,
+        "narHash": "sha256-xTICr1j+uat5hk9FyuPOFGxpWHdJRibwZC+ATi0RbtE=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "5a1dc8acd977ff3dccd1328b7c4a6995429a656b",
+        "rev": "ac718d02867a84b42522a0ece52d841188208f2c",
         "type": "github"
       },
       "original": {
@@ -478,6 +498,7 @@
       "inputs": {
         "home-manager": "home-manager",
         "hyprland": "hyprland",
+        "hyprland-contrib": "hyprland-contrib",
         "nix-doom-emacs": "nix-doom-emacs",
         "nixpkgs": "nixpkgs_3"
       }

@@ -21,12 +21,22 @@
     };
 
     home = {
-
         packages = with pkgs; [
             neofetch
             google-chrome
             vscode
             kitty
+            pavucontrol
+            unityhub
+            discord
+            yakuake
         ];
+    };
+
+    gtk = {
+      theme = {
+        package = pkgs.nordic;
+        name = "Nordic";
+      };
     };
 }
