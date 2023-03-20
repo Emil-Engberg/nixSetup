@@ -93,11 +93,18 @@
       enable = true;
     };
 
+    flatpak = {
+      enable = true;
+    };
+
   };
 
   console.keyMap = "sv-latin1";
 
   fonts = {
+
+    fontDir.enable = true;
+
     fonts = with pkgs; [
       jetbrains-mono
       ubuntu_font_family
@@ -135,6 +142,8 @@
     wget
     unzip
     zip
+    appimage-run
+    htop
   ];
 
   system.stateVersion = "22.11";

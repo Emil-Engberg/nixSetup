@@ -30,10 +30,12 @@
             discord
             yakuake
             spotify
+            dconf
         ];
     };
 
     gtk = {
+      enable = true;
       theme = {
         package = pkgs.nordic;
         name = "Nordic";
