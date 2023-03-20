@@ -1,4 +1,4 @@
-{ lib, inputs, nixpkgs, home-manager, user, location, hyprland, nix-doom-emacs, ... }:
+{ lib, inputs, nixpkgs, home-manager, user, location, nix-doom-emacs, ... }:
 
 let
   system = "x86_64-linux";                               
@@ -22,8 +22,6 @@ in
     modules = [
       ./configuration.nix
       ../configs/default.nix
-
-      hyprland.nixosModules.default
 
       home-manager.nixosModules.home-manager {
         home-manager.useGlobalPkgs = true;

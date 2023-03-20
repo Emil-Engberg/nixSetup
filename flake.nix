@@ -10,18 +10,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    hyprland.url = "github:hyprwm/Hyprland";
-
-     hyprland-contrib = {
-      url = "github:hyprwm/contrib";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     nix-doom-emacs.url = "github:nix-community/nix-doom-emacs";
 
   };
 
-  outputs = { self, nixpkgs, home-manager, hyprland, nix-doom-emacs, ... }@inputs: 
+  outputs = { self, nixpkgs, home-manager, nix-doom-emacs, ... }@inputs: 
   let
     user = "sebastian";
     location = "/$HOME/.setup";
@@ -30,7 +23,7 @@
     nixosConfigurations = (
      import ./host {
         inherit (nixpkgs) lib;
-        inherit inputs nixpkgs user location home-manager hyprland nix-doom-emacs;
+        inherit inputs nixpkgs user location home-manager nix-doom-emacs;
       }
     );
   };

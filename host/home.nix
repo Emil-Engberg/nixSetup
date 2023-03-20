@@ -27,7 +27,6 @@
             vscode
             kitty
             pavucontrol
-            unityhub
             discord
             yakuake
             spotify
