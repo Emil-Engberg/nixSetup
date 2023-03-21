@@ -20,8 +20,7 @@ in
       };
     };
     modules = [
-      ./configuration.nix
-      ../configs/default.nix
+      ./desktop
 
       home-manager.nixosModules.home-manager {
         home-manager.useGlobalPkgs = true;
@@ -35,7 +34,7 @@ in
         home-manager.users.${user} = {
           home.stateVersion = "22.05";
           imports = [
-            ./home.nix
+            ./desktop/home.nix
             nix-doom-emacs.hmModule
           ];
         };
