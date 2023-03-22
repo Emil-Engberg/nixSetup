@@ -12,6 +12,7 @@
             yakuake
             spotify
             dconf
+            minecraft
         ];
     };    
 }

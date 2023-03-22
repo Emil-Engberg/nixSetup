@@ -15,5 +15,6 @@
       ./xserver.nix
       ./locale.nix
       ./fonts.nix
+      ./ssh.nix
     ];
 }
