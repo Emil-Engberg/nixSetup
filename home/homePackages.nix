@@ -12,7 +12,7 @@
             yakuake
             spotify
             dconf
-            minecraft
+            prismlauncher
         ];
     };    
 }

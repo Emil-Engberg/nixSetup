@@ -7,5 +7,6 @@
         zip
         appimage-run
         htop
+        jdk
     ];    
 }
