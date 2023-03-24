@@ -1,4 +1,9 @@
 { pkgs, config, ... }:
 {
-xdg.configFile.".emacs.d".source = ./Emacs_conf;
+home.file = {
+    ".emacs.d" = {
+      source = ./Emacs_conf;
+      recursive = true;
+};
+ };
  }
