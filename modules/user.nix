@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 
 {
-    users.users.sebastian = {
+    users.users.emil = {
         isNormalUser = true;
         description = "Emil Engberg";
         initialPassword = "pass";

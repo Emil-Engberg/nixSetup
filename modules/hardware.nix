@@ -12,6 +12,6 @@
       libvdpau-va-gl
     ];
   };
+ hardware.opengl.extraPackages32 = with pkgs.pkgsi686Linux; [ vaapiIntel ];
 }
 
- hardware.opengl.extraPackages32 = with pkgs.pkgsi686Linux; [ vaapiIntel ];
