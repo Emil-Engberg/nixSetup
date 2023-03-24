@@ -8,5 +8,6 @@
         appimage-run
         htop
         jdk
+        killall
     ];    
 }

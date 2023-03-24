@@ -1,0 +1,9 @@
+[$Version]
+update_info=kscreenlocker.upd:0.1-autolock
+
+[Daemon]
+Timeout=10
+
+[Greeter][Wallpaper][org.kde.image][General]
+Image=/home/sebastian/.setup/background/wallpaperflare.com_wallpaper.jpg
+PreviewImage=/home/sebastian/.setup/background/wallpaperflare.com_wallpaper.jpg
