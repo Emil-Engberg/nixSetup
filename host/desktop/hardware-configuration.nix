@@ -47,5 +47,5 @@
   powerManagement.cpuFreqGovernor = lib.mkDefault "performance";
   hardware.cpu.intel.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
   # high-resolution display
-  hardware.video.hidpi.enable = lib.mkDefault true;
+  fonts.optimizeForVeryHighDPI = lib.mkDefault true;
 }

@@ -5,6 +5,7 @@
     xserver = {
       enable = true;
       layout = "se";
+      dpi = 1;
       displayManager = {
         sddm.enable = true;
       };
