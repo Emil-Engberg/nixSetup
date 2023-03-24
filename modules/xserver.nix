@@ -9,7 +9,7 @@
       displayManager = {
         sddm.enable = true;
       };
-      desktopManager.plasma5.enable =true;
+      desktopManager.cinnamon.enable = true;
     };
   };
 }

@@ -3,13 +3,11 @@
 {
     home = {
         packages = with pkgs; [
-            neofetch
-            google-chrome
-            vscode
+          neofetch
+          firefox
             kitty
             pavucontrol
             discord
-            yakuake
             spotify
             dconf
             prismlauncher

@@ -1,7 +1,0 @@
-{
-    programs = {
-        vim = {
-            enable = true;
-        };
-    };
-}

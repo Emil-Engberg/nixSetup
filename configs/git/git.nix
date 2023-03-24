@@ -4,8 +4,8 @@
     programs = {
         git = {
             enable = true;
-            userName = "Sebastian Lindholm Gustafsson";
-            userEmail = "sebastianlindholm@outlook.com";
+            userName = "Emil Engberg";
+            userEmail = "emil.engberg@outlook.com";
 
             extraConfig = {
                 credential.helper = "${

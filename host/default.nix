@@ -1,4 +1,4 @@
-{ lib, inputs, nixpkgs, home-manager, user, location, nix-doom-emacs, ... }:
+{ lib, inputs, nixpkgs, home-manager, user, location, ... }:
 
 let
   system = "x86_64-linux";                               
@@ -35,7 +35,6 @@ in
           home.stateVersion = "22.05";
           imports = [
             ./desktop/home.nix
-            nix-doom-emacs.hmModule
           ];
         };
       }
