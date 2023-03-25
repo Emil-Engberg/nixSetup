@@ -10,10 +10,13 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-
+    dotfiles = {
+    url = "github:Emil-Engberg/Emacs_conf";
+    flake = false;
+  };
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }@inputs: 
+  outputs = { self, nixpkgs, home-manager, dotfiles,... }@inputs: 
   let
     user = "emil";
     location = "/$HOME/.setup";
@@ -22,7 +25,7 @@
     nixosConfigurations = (
      import ./host {
         inherit (nixpkgs) lib;
-        inherit inputs nixpkgs user location home-manager;
+        inherit inputs nixpkgs user location home-manager dotfiles;
       }
     );
   };

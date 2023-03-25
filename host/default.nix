@@ -1,4 +1,4 @@
-{ lib, inputs, nixpkgs, home-manager, user, location, ... }:
+{ lib, inputs, nixpkgs, home-manager, user, location, dotfiles,... }:
 
 let
   system = "x86_64-linux";                               
@@ -26,7 +26,7 @@ in
         home-manager.useGlobalPkgs = true;
         home-manager.useUserPackages = true;
         home-manager.extraSpecialArgs = {
-          inherit user;
+          inherit user dotfiles;
           host = {
             hostName = "desktop";
           };

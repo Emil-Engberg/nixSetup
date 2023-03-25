@@ -1,5 +1,5 @@
-{ config, pkgs, lib,... }:
+{ config, pkgs, lib, dotfiles,... }:
 
 {
-xdg.configFile."./.emacs.d".source = config.lib.file.mkOutOfStoreSymlink ./Emacs_conf;
+xdg.configFile.emacs.source = "${dotfiles}";
 }

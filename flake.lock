@@ -1,5 +1,21 @@
 {
   "nodes": {
+    "dotfiles": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1679681699,
+        "narHash": "sha256-uC8L3eg5MxRRdhoej6kSJvwMpluXBckjNGAfX+SR/zA=",
+        "owner": "Emil-Engberg",
+        "repo": "Emacs_conf",
+        "rev": "7211764ecf16f8d6d648d49fa376083e1259a2c3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Emil-Engberg",
+        "repo": "Emacs_conf",
+        "type": "github"
+      }
+    },
     "home-manager": {
       "inputs": {
         "nixpkgs": [
@@ -39,6 +55,7 @@
     },
     "root": {
       "inputs": {
+        "dotfiles": "dotfiles",
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs"
       }

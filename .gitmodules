@@ -1,3 +1,0 @@
-[submodule "configs/emacs/Emacs_conf"]
-	path = configs/emacs/Emacs_conf
-	url = git@github.com:Emil-Engberg/Emacs_conf.git
