@@ -3,6 +3,6 @@
 {
     imports = [
         git/git.nix
-	emacs/
+	emacs/default.nix
     ];
 }
